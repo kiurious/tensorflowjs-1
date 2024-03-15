@@ -12,6 +12,14 @@ import "@tensorflow/tfjs";
 import { Skeleton } from "@/components/ui/skeleton";
 
 export default function TeachableMachine() {
+  function enableCam() {
+    console.log("enableCam");
+  }
+
+  function trainAndPredict() {}
+
+  function reset() {}
+
   return (
     <Card className="w-1/2 bg-primary text-white border-none shadow-xl">
       <CardHeader>
@@ -25,11 +33,11 @@ export default function TeachableMachine() {
         <p>Status - Awaiting TF.js to load</p>
         <video id="webcam" autoPlay muted></video>
         <div>
-          <Button>Enable Webcam</Button>
+          <Button onClick={enableCam}>Enable Webcam</Button>
           <Button>Gather Class 1 Data </Button>
           <Button>Gather Class 2 Data</Button>
-          <Button>Train & Predict</Button>
-          <Button>Reset</Button>
+          <Button onClick={trainAndPredict}>Train & Predict</Button>
+          <Button onClick={reset}>Reset</Button>
         </div>
       </CardContent>
       <CardFooter className="flex gap-4"></CardFooter>
