@@ -17,11 +17,12 @@ export default function TeachableMachine() {
       <CardHeader>
         <CardTitle>Teachable Machine</CardTitle>
         <CardDescription>
-          Train your own machine learning model using your webcam via transfer
-          learning.
+          Make your own "Teachable Machine" using Transfer Learning with
+          MobileNet v3 in TensorFlow.js using saved graph model from TFHub
         </CardDescription>
       </CardHeader>
       <CardContent>
+        <p>Status - Awaiting TF.js to load</p>
         <video id="webcam" autoPlay muted></video>
         <div>
           <Button>Enable Webcam</Button>
