@@ -6,19 +6,31 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import { Input } from "@/components/ui/input";
+// import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import "@tensorflow/tfjs";
-import { Skeleton } from "@/components/ui/skeleton";
+// import * as mobilenet from "@tensorflow-models/mobilenet";
+
+// import { Skeleton } from "@/components/ui/skeleton";
 
 export default function TeachableMachine() {
   function enableCam() {
     console.log("enableCam");
   }
 
+  // function gatherDataForClass() {}
+
   function trainAndPredict() {}
 
   function reset() {}
+
+  // let mobilenet = undefined;
+  // // let gatherDataState = STOP_DATA_GATHER;
+  // let videoPlaying = false;
+  // let trainingDataInputs = [];
+  // let trainingDataOutputs = [];
+  // let examplesCount = [];
+  // let predict = false;
 
   return (
     <Card className="w-1/2 bg-primary text-white border-none shadow-xl">
